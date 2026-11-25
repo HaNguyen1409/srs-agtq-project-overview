@@ -1,0 +1,36 @@
+{
+  "$schema_version": 1,
+  "name": "srs-agtq-project-overview",
+  "version": "1.1.0",
+  "node_id": "AG-TQ",
+  "kind": "agent",
+  "summary": "Agent Node AG-TQ (Bước B8a SOP viết SRS): soạn TL-01 Tổng quan dự án (tầm nhìn & phạm vi) ngay cuối Pha A theo bố cục MECE 9 mục, mỗi mục trả lời một câu hỏi — bối cảnh, mục tiêu & lợi ích nối với công việc JTBD và tiêu chí đo, tầm nhìn, phạm vi tách 3 nhóm loại trừ nhau (trong / ngoài / chờ quyết…",
+  "repository": "https://github.com/HaNguyen1409/srs-agtq-project-overview",
+  "license": "MIT",
+  "interface": {
+    "contract": "SKILL.md — đầu vào/đầu ra là tài liệu Markdown/JSON mô tả trong skill; không gọi trực tiếp skill khác",
+    "output_artifact": "TL-01",
+    "sop_steps": [
+      {
+        "step": "8a",
+        "title": "Tổng quan dự án — TL-01 bản 0.1 (bố cục MECE 9 mục: bối cảnh, mục tiêu & lợi ích, tầm nhìn, phạm vi trong/ngoài/chờ quyết định, bên liên quan, giả định & ràng…",
+        "type": "Agent",
+        "receives_from": "B1, B3, B5, B6, (B8), (B5a)",
+        "sends_to": "Khách (gửi kèm phiếu câu hỏi B6), B9; cập nhật sau B9 vòng 1 và B17; ký cùng SRS ở B24"
+      }
+    ]
+  },
+  "upstream": {
+    "srs-ag01-transcript-summary": "^2.0.0",
+    "srs-ag03-gap-analysis": "^2.2.1",
+    "srs-ag05-feature-matrix": "^2.0.0",
+    "srs-agmt-functional-matrix": "^1.1.0"
+  },
+  "downstream": [
+    "srs-ag03-gap-analysis",
+    "srs-ag06-business-model",
+    "srs-ag09-demo-feedback-triage"
+  ],
+  "orchestrates": {},
+  "runtime": null
+}
