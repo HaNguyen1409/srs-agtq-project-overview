@@ -1,7 +1,7 @@
 ---
 name: srs-agtq-project-overview
 description: "Agent Node AG-TQ (Bước B8a SOP viết SRS): soạn TL-01 Tổng quan dự án (tầm nhìn & phạm vi) ngay cuối Pha A theo bố cục MECE 9 mục, mỗi mục trả lời một câu hỏi — bối cảnh, mục tiêu & lợi ích nối với công việc JTBD và tiêu chí đo, tầm nhìn, phạm vi tách 3 nhóm loại trừ nhau (trong / ngoài / chờ quyết định, mỗi mã yêu cầu khách đúng một nhóm), bên liên quan theo nhóm, giả định & ràng buộc, tiêu chí thành công (nơi duy nhất có chỉ số và ngưỡng), rủi ro, xác nhận. Không chép hiện trạng phần mềm hay ánh xạ vai trò ACT (thuộc AG-MT). Dùng khi cần TL-01 hoặc khi cập nhật TL-01 sau B9/B17."
-version: "1.1.0"
+version: "1.2.0"
 status: active
 node_id: AG-TQ
 sop_step: "B8a"
@@ -153,6 +153,16 @@ Thông tin tài liệu (Mã · Phiên bản · Bước SOP · Căn cứ · Sở 
 ## 9. Xác nhận
 ```
 Số mục cố định — tài liệu khác tham chiếu «TL-01 §2» (mục tiêu), «§4.1/§4.2/§4.3» (phạm vi), «§6.1» (giả định), «§6.2» (ràng buộc), «§7» (tiêu chí). Đổi số mục phải cập nhật tham chiếu ở Pha A và B5a.
+
+### Quy tắc viết cho người đọc (TL-02 hướng dẫn §7)
+
+Phần Markdown được nhúng nguyên văn thành một chương của SRS, nên viết đúng ngay ở đây; SRS không sửa lại. Quy tắc áp dụng cho phần thân (bảng thông tin đầu tài liệu và lịch sử phiên bản bị bỏ khi nhúng). Đủ tám quy tắc V1–V8 và danh sách cụm cần tìm trước khi xuất: `07-Chuan-tai-lieu/templates/TL-02_huong-dan-lap-rap-SRS.md` §7. Năm điểm hay sai:
+
+- **Người đọc:** 11 nhóm, từ khách hàng, chủ nghiệp vụ tới lập trình viên, kiểm thử, người dùng cuối (danh sách ở mẫu TL-02 §1.2). Viết tiếng Việt thông dụng; tên kỹ thuật chỉ giữ khi người lập trình, kiểm thử cần đúng tên đó (tên bảng, cột, cờ cookie).
+- **Câu dẫn** nói bảng hoặc mục dưới là gì và đọc thế nào, không nói quy trình nội bộ của bên lập: không «nơi duy nhất», «không chép lại», «vòng 1», «brief», «baseline», «hội tụ», số bước Bxx, mã AG-xx. Ghi chú sở hữu, MECE trong khung đầu ra ở trên là hướng dẫn cho Agent, không in ra. Trỏ sang tài liệu khác chỉ ghi mã tài liệu và số mục (vd «RTM <mã tài liệu> (sheet D06_UC)»).
+- **Viết tắt và tiền tố mã:** mọi chữ viết tắt, tiền tố mã, ký hiệu trong tài liệu phải có trong `glossary` / `id_legend` của project.json (SRS §1.4) hoặc được giải nghĩa ở câu dẫn ngay trên bảng. Dùng cái mới thì bổ sung vào `glossary` / `id_legend` cùng lúc.
+- **Trạng thái** in ra dạng nhãn thường trong bảng đọc («Đã có nguồn», «Cần xác nhận»), không in mã HOA_GẠCH_DƯỚI; mã giữ trong JSON.
+- **Một ký hiệu một nghĩa, một khái niệm một tên:** không dùng ký hiệu trùng với tiền tố mã đã có (vd «(GĐ)» trùng GD-xx giả định; bước chưa có nguồn ghi «(suy luận)»); vai trò ghi đúng tên trên phần mềm ở mọi mục.
 
 ---
 

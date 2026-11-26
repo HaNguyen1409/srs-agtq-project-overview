@@ -1,7 +1,7 @@
 {
   "$schema_version": 1,
   "name": "srs-agtq-project-overview",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "node_id": "AG-TQ",
   "kind": "agent",
   "summary": "Agent Node AG-TQ (Bước B8a SOP viết SRS): soạn TL-01 Tổng quan dự án (tầm nhìn & phạm vi) ngay cuối Pha A theo bố cục MECE 9 mục, mỗi mục trả lời một câu hỏi — bối cảnh, mục tiêu & lợi ích nối với công việc JTBD và tiêu chí đo, tầm nhìn, phạm vi tách 3 nhóm loại trừ nhau (trong / ngoài / chờ quyết…",
@@ -24,7 +24,7 @@
     "srs-ag01-transcript-summary": "^2.0.0",
     "srs-ag03-gap-analysis": "^2.2.1",
     "srs-ag05-feature-matrix": "^2.0.0",
-    "srs-agmt-functional-matrix": "^1.1.0"
+    "srs-agmt-functional-matrix": "^1.2.0"
   },
   "downstream": [
     "srs-ag03-gap-analysis",

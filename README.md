@@ -1,6 +1,6 @@
 # srs-agtq-project-overview
 
-**AG-TQ** · Agent Node · phiên bản **1.1.0** · giấy phép MIT
+**AG-TQ** · Agent Node · phiên bản **1.2.0** · giấy phép MIT
 
 > Vietnamese-language Claude skill — one independent, reusable service of the SRS-SOP agent pipeline. Machine-readable contract: [`skill.json`](skill.json).
 
@@ -16,21 +16,21 @@ Skill là một dịch vụ độc lập, ghép lỏng: nhận đầu vào và t
 
 **Sản phẩm đầu ra:** TL-01
 
-**Skill phía trước (cấp đầu vào):** [`srs-ag01-transcript-summary`](https://github.com/HaNguyen1409/srs-ag01-transcript-summary) `^2.0.0` · [`srs-ag03-gap-analysis`](https://github.com/HaNguyen1409/srs-ag03-gap-analysis) `^2.2.1` · [`srs-ag05-feature-matrix`](https://github.com/HaNguyen1409/srs-ag05-feature-matrix) `^2.0.0` · [`srs-agmt-functional-matrix`](https://github.com/HaNguyen1409/srs-agmt-functional-matrix) `^1.1.0`
+**Skill phía trước (cấp đầu vào):** [`srs-ag01-transcript-summary`](https://github.com/HaNguyen1409/srs-ag01-transcript-summary) `^2.0.0` · [`srs-ag03-gap-analysis`](https://github.com/HaNguyen1409/srs-ag03-gap-analysis) `^2.2.1` · [`srs-ag05-feature-matrix`](https://github.com/HaNguyen1409/srs-ag05-feature-matrix) `^2.0.0` · [`srs-agmt-functional-matrix`](https://github.com/HaNguyen1409/srs-agmt-functional-matrix) `^1.2.0`
 
-**Skill phía sau (dùng đầu ra):** [`srs-ag03-gap-analysis`](https://github.com/HaNguyen1409/srs-ag03-gap-analysis) `^2.2.1` · [`srs-ag06-business-model`](https://github.com/HaNguyen1409/srs-ag06-business-model) `^1.4.2` · [`srs-ag09-demo-feedback-triage`](https://github.com/HaNguyen1409/srs-ag09-demo-feedback-triage) `^1.0.0`
+**Skill phía sau (dùng đầu ra):** [`srs-ag03-gap-analysis`](https://github.com/HaNguyen1409/srs-ag03-gap-analysis) `^2.2.1` · [`srs-ag06-business-model`](https://github.com/HaNguyen1409/srs-ag06-business-model) `^1.5.0` · [`srs-ag09-demo-feedback-triage`](https://github.com/HaNguyen1409/srs-ag09-demo-feedback-triage) `^1.0.0`
 
 ## Cài đặt
 
 **Claude Code** — clone đúng phiên bản vào thư mục skill:
 
 ```bash
-git clone --branch v1.1.0 https://github.com/HaNguyen1409/srs-agtq-project-overview.git ~/.claude/skills/srs-agtq-project-overview
+git clone --branch v1.2.0 https://github.com/HaNguyen1409/srs-agtq-project-overview.git ~/.claude/skills/srs-agtq-project-overview
 ```
 
 Nâng cấp: `git -C ~/.claude/skills/srs-agtq-project-overview fetch --tags && git -C ~/.claude/skills/srs-agtq-project-overview checkout v<phiên-bản-mới>`.
 
-**claude.ai / Claude Desktop** — tải `srs-agtq-project-overview-v1.1.0.zip` ở trang [Releases](https://github.com/HaNguyen1409/srs-agtq-project-overview/releases) rồi tải lên ở phần Skills trong cài đặt.
+**claude.ai / Claude Desktop** — tải `srs-agtq-project-overview-v1.2.0.zip` ở trang [Releases](https://github.com/HaNguyen1409/srs-agtq-project-overview/releases) rồi tải lên ở phần Skills trong cài đặt.
 
 **Cả bộ** — xem [`srs-sop-skills`](https://github.com/HaNguyen1409/srs-sop-skills) (cài toàn bộ skill theo phiên bản đã khoá).
 
